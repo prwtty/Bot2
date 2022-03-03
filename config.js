@@ -14,12 +14,12 @@ const _config = {
     */
 
     // Client Settings (REQUIRED)
-    prefix: "h!", // The prefix to run all commands inside of the bot
-    token: "YOUR_BOT_TOKEN", // The token from your Discord Dev Portal
-    your_guild_id: "YOUR_SERVER_ID", // This is where you would put your server ID.
-    aboutServer: "This bot has over 90 Commands, has an excessively customizabled configuration file, and can make your server look professional and clean! Feel free to buy it [here](https://hyperz.dev/)!", // This is a description of your server
+    prefix: ".", // The prefix to run all commands inside of the bot
+    token: "NzI5MTAyNTA0NTIzOTg5MDEy.XwEDnw.JnD8i5NuA0hJsxQsGjKkxgZOfa4", // The token from your Discord Dev Portal
+    your_guild_id: "713910787487563776", // This is where you would put your server ID.
+    aboutServer: "Official Discord of BenJammin2K20", // This is a description of your server
     date_format: "MM-DD-YYYY HH:mm", // The date format for the bot
-    copyright: "© 2021 Your Name", // The footer for most embeds
+    copyright: "© 2021 BenJammin2K20", // The footer for most embeds
     colorhex: "#426cf5", // The main theme and color of the bot
     voicechanneltojoin: "VOICE_CHANNEL_ID", // A voice channel the bot will sit in on startup
     deleteCommands: true, // This will decide whether or not to delete commands when they are ran.
@@ -32,9 +32,9 @@ const _config = {
 
     // Presence Settings (REQUIRED)
     presence: [
-        {name: "HD-Client", type: "PLAYING", status: "dnd"}, // The bot will cycle through these
-        {name: "This Server", type: "WATCHING", status: "dnd"}, // The bot will cycle through these
-        {name: "Jellys Music", type: "LISTENING", status: "dnd"} // The bot will cycle through these
+        {name: "BenJammin2K20", type: "PLAYING", status: "dnd"}, // The bot will cycle through these
+        {name: "WorldWideRP!", type: "WATCHING", status: "dnd"}, // The bot will cycle through these
+        {name: "Dylan's Rants", type: "LISTENING", status: "dnd"} // The bot will cycle through these
     ],
 
     // MySQL Settings (REQUIRED)
@@ -125,12 +125,12 @@ const _config = {
 
     // Alt Prevention Settings
     alt_prevention: {
-        enabled: false, // Toggle on or off
+        enabled: true, // Toggle on or off
 
         removeAlts: false, // Toggle on or off the bot kicking alt accounts
         botsBypass: false, // Toggle on or off if bots should be affected
 
-        dmUsers: false, // Toggle on or off if the bot should DM users about being removed for being alts
+        dmUsers: true, // Toggle on or off if the bot should DM users about being removed for being alts
         dmMessage: "We detected your account as an alt.", // The message that the bot should DM them
 
         timelimit: "30d" // The account age limit before an account is considered an alt
@@ -138,9 +138,9 @@ const _config = {
 
     // Ping Prevention Settings
     pingprev: {
-        enabled: false, // Toggle on or off
+        enabled: true, // Toggle on or off
         data: [ // The users for the ping prevention module
-            {userid: "704094587836301392", embedcolor: "#0362fc", useMessage: false, message: "Please do not ping me, I have a life, just like you :]", useImage: false, imageURL: "https://hyperz.dev/images/nopinghyperzlol.png"}
+            {userid: "527255528657649694", embedcolor: "#FF7000", useMessage: false, message: "Please do not ping me, I have a life, just like you :]", useImage: false, imageURL: "https://hyperz.dev/images/nopinghyperzlol.png"}
         ]
     },
 
@@ -244,7 +244,7 @@ const _config = {
 
     // Giveaway Module Settings
     giveaways_module: {
-        enabled: false, // Toggle on or off
+        enabled: true, // Toggle on or off
 
         joinButton: "", // The text for the button
         joinButtonStyle: "", // The style for the button
@@ -316,25 +316,25 @@ const _config = {
 
     // FiveM Integration Settings
     fivem_module: {
-        enabled: false, // Toggle on or off
+        enabled: true, // Toggle on or off
 
-        playersCommand: false, // Toggle players command on or off
+        playersCommand: true, // Toggle players command on or off
 
         refreshRate: "10m", // Set the server ping refresh rate for channel updates
         servers: [ // Channel ID to update       Name of channel      Server IP and PORT
-            {server: 1, channelid: "884123193021964289", name: "Players", serverIPPort: "66.11.113.243:30120"},
+            {server: 1, channelid: "949061428998975498", name: "Players", serverIPPort: "server.worldwiderp.com"},
             {server: 2, channelid: "884133617075359755", name: "LOLZ", serverIPPort: "170.39.213.207:30120"}
         ]
     },
 
     // Utility Settings
     utility_module: {
-        mutedRoleId: "YOUR_MUTED_ROLE_ID", // The ID to your muted role goes here
+        mutedRoleId: "949061575858356264", // The ID to your muted role goes here
         deleteSnipes: false, // Should snipes be deleted after they are fetched
         stickyMessages: false, // Toggles if stick messages should be enabled or not
         marriageSystem: false, // Toggles the marriage system on or off
 
-        websiteUrl: "https://hyperz.dev/", // The URL to your website for the website command
+        websiteUrl: "", // The URL to your website for the website command
         tosMessage: "Please **confirm** that you agree to our ToS\nBy typing \`I Agree\`.", // The message for the TOS command
 
         usePayPal: false, // Toggle on or off this payment method
@@ -349,14 +349,14 @@ const _config = {
         filterSystem: false, // Toggle the filter system on or off
         filteredWords: ['fuck'], // The words to be filtered
 
-        birthdaySystem: false, // Toggle the birthday system on or off
-        birthdayChannels: ["ID_HERE"], // The channel ids to log birthdays in
+        birthdaySystem: true, // Toggle the birthday system on or off
+        birthdayChannels: ["713913534202773586"], // The channel ids to log birthdays in
         birthdayHeaderText: "🥳 Happy Birthday!", // The header text for the birthday embed
-        birthdayColorhex: "", // The color of the birthday embed
+        birthdayColorhex: "FF7000", // The color of the birthday embed
         birthdayRoleToPing: "", // The role to ping for birthdays, if empty, it won't ping any
 
-        countingSystem: false, // Toggle on or off
-        countingChannelId: "", // The channel ID for the counting to take place
+        countingSystem: true, // Toggle on or off
+        countingChannelId: "891415403622965308", // The channel ID for the counting to take place
         deleteCountingOnEnd: false, // Toggles if the messages should be deleted if someone ruins the count
 
         useSuggestions: false, // Toggle on or off suggestions
@@ -395,18 +395,18 @@ const _config = {
     // Permission Settings
     // THESE ARE ALL ROLE IDS NOT USER IDS
     permissions_module: { // THESE ARE ALL ROLE IDS NOT USER IDS
-        managers: ["ROLE_ID_HERE"], // People who can lock down server, use pay commands, client managers, and do giveaways
-        moderation: ["ROLE_ID_HERE"], // People who can use moderation commands
+        managers: ["714212013898727444", "889953038410846208"], // People who can lock down server, use pay commands, client managers, and do giveaways
+        moderation: ["714212013898727444", "889953038410846208"], // People who can use moderation commands
         support: ["ROLE_ID_HERE"], // Access to support commands, and ticket system
         suggestions: ["ROLE_ID_HERE"], // Can send suggestions
         reviews: ["ROLE_ID_HERE"], // Can create reviews
         bugreports: ["ROLE_ID_HERE"], // Can create bug reports
-        blacklists: ["ROLE_ID_HERE"], // Can manage blacklists
-        stickymsgs: ["ROLE_ID_HERE"], // Can create and remove sticky messages
-        infoAccess: ["ROLE_ID_HERE"], // Can use the information commands
+        blacklists: ["714212013898727444", "889953038410846208"], // Can manage blacklists
+        stickymsgs: ["714212013898727444", "889953038410846208"], // Can create and remove sticky messages
+        infoAccess: ["714212013898727444", "889953038410846208"], // Can use the information commands
         economyManagers: ["ROLE_ID_HERE"], // Can create items for the economy store
-        bypassPingPrev: ["ROLE_ID_HERE"], // Can bypass Ping Prevention
-        bypassFilterSystem: ["ROLE_ID_HERE"] // Can bypass Filter System
+        bypassPingPrev: ["714212013898727444", "889953038410846208"], // Can bypass Ping Prevention
+        bypassFilterSystem: ["714212013898727444", "889953038410846208"] // Can bypass Filter System
     },
 
     // Logging Settings
